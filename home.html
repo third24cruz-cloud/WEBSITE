@@ -1,24 +1,309 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PNU Developmental Portfolio | Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <nav class="navbar">
-            <a href="#" class="logo">
-                <h2 class="logo-text">My Website</h2>
-            </a>
-            <ul class:"nav-menu">
-                <li class="nav item">
-                    <a href="home.html">Home</a>
-                </li>
-                <li class="nav item">
-                    <a href="self-assessment.html">Assessment</a>
-                </li>
-                <li class="nav item">
-                    <a href="evidences.html">Evidences</a>
-                </li>
+
+    <div class="dashboard-wrapper">
+        
+        <!-- SIDEBAR NAVIGATION -->
+        <aside class="sidebar">
+            <div class="sidebar-brand">
+                <div class="brand-avatar">PNU</div>
+                <div class="brand-meta">
+                    <h2>DEVELOPMENTAL</h2>
+                    <p>PORTFOLIO Dashboard</p>
+                </div>
+            </div>
+            
+            <nav class="sidebar-menu">
+                <a href="#home" class="menu-item active">
+                    <span class="icon"></span> Overview
+                </a>
+                <a href="#assessment" class="menu-item">
+                    <span class="icon"></span> Self-Assessment Matrix
+                </a>
+                <a href="#evidence" class="menu-item">
+                    <span class="icon"></span> Artifacts & Evidence
+                </a>
+                <a href="#retrospection" class="menu-item">
+                    <span class="icon"></span> Overall Retrospection
+                </a>
+            </nav>
+
+            <div class="sidebar-footer">
+                <p>Year 1</p>
+                <span class="badge">TEDPaths Curriculum</span>
+            </div>
+        </aside>
+
+        <!-- MAIN VIEWPORT CONTENT -->
+        <main class="main-content">
+            
+            <!-- TOP STATS BAR / HEADER -->
+            <header class="top-bar">
+                <div class="welcome-text">
+                    <h1>Pre-Service Teacher Workspace</h1>
+                    <p>Track, evaluate, and archive your professional growth pathways.</p>
+                </div>
+                <div class="user-profile-tag">
+                    <div class="status-indicator active-glow"></div>
+                    <span>[Your Name Here]</span>
+                </div>
+            </header>
+
+<!-- NEW: MONTHLY HIGHLIGHTS BANNER SLOT -->
+<div class="monthly-showcase-card">
+    <div class="showcase-image-side">
+        <!-- Replace this placeholder with your monthly picture (e.g., "june-activity.jpg") -->
+        <img src="june-activity.jpg" alt="Current Month Highlight" onerror="this.src='https://placehold.co/800x400/0c2340/ffffff?text=Upload+This+Month%27s+Photo+Here'">
+        <div class="month-badge">June 2026</div>
+    </div>
+    <div class="showcase-text-side">
+        <span class="update-tag">⚡ Latest Monthly Update</span>
+        <h2>Month in Review: Focus & Milestones</h2>
+        <p>This month, I concentrated heavily on structuring my digital tracking matrix and finalizing my primary reflection artifacts[cite: 1]. I successfully integrated multimedia resources into my workspace to prepare for upcoming evaluations.</p>
+        <div class="mini-stats-row">
+            <div class="mini-stat">
+                <strong>1</strong>
+                <span>Artifact Logged</span>
+            </div>
+            <div class="mini-stat">
+                <strong>100%</strong>
+                <span>Form Progress</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="content-body">
+    <!-- Rest of your section cards (home, assessment, etc.) stay here -->
+
+            <div class="content-body">
+                
+                <!-- OVERVIEW SECTION -->
+                <section id="home" class="pane-card">
+                    <div class="pane-header">
+                        <h2>Institutional Profile</h2>
+                        <span class="pill-tag">U-3781, s. 2024</span>
+                    </div>
+                    <hr>
+                    <p>This progressive e-portfolio tracks personal, academic, and professional competencies across your university stay. Under the BOR-Approved Enhanced Experiential Learning Pathway, Year 1 serves as the crucial foundation layout[cite: 1].</p>
+                    
+                    <div class="philosophy-callout">
+                        <h4>Emerging Educational Guiding Principles</h4>
+                        <p class="quote-text">"Insert your personal teaching philosophy or educational beliefs here. Dedicate 2-3 sentences about your vision of becoming a future-ready educator."[cite: 1]</p>
+                    </div>
+                </section>
+
+                <!-- SELF ASSESSMENT MATRIX SECTION -->
+                <section id="assessment" class="pane-card">
+                    <div class="pane-header">
+                        <h2>Self-Assessment Tool for Aspiring Teachers</h2>[cite: 1]
+                    </div>
+                    <p class="section-desc">Rate your performance across PNU's 5 institutional outcomes to dynamically compute your developmental matrix stage[cite: 1].</p>
+                    <hr>
+
+                    <form id="assessmentForm" class="matrix-grid">
+                        <!-- Group 1 -->
+                        <div class="form-matrix-card">
+                            <h3>1. Digital Literate & Data-Driven Decision Maker</h3>[cite: 1]
+                            <div class="input-field">
+                                <label>Indicator 1.1: Standard GE coursework digital execution[cite: 1]</label>
+                                <select class="score-input"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4" selected>4</option></select>
+                            </div>
+                            <div class="input-field">
+                                <label>Indicator 1.2: Purposeful structure & presentation[cite: 1]</label>
+                                <select class="score-input"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4" selected>4</option></select>
+                            </div>
+                            <div class="input-field">
+                                <label>Indicator 1.3: Ethical use & data security compliance[cite: 1]</label>
+                                <select class="score-input"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4" selected>4</option></select>
+                            </div>
+                            <div class="input-field">
+                                <label>Indicator 1.4: Reflection mapping on digital tools[cite: 1]</label>
+                                <select class="score-input"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4" selected>4</option></select>
+                            </div>
+                        </div>
+
+                        <!-- Group 2 -->
+                        <div class="form-matrix-card">
+                            <h3>2. Design Thinker & Innovator</h3>[cite: 1]
+                            <div class="input-field">
+                                <label>Indicator 2.1: Interdisciplinary problem solving[cite: 1]</label>
+                                <select class="score-input"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4" selected>4</option></select>
+                            </div>
+                            <div class="input-field">
+                                <label>Indicator 2.2: Original/adapted academic design outputs[cite: 1]</label>
+                                <select class="score-input"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4" selected>4</option></select>
+                            </div>
+                            <div class="input-field">
+                                <label>Indicator 2.3: Structural innovation reflection entries[cite: 1]</label>
+                                <select class="score-input"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4" selected>4</option></select>
+                            </div>
+                        </div>
+
+                        <!-- Group 3 -->
+                        <div class="form-matrix-card">
+                            <h3>3. Discerning & Compassionate Person</h3>[cite: 1]
+                            <div class="input-field">
+                                <label>Indicator 3.1: Academic path self-assessment with empathy[cite: 1]</label>
+                                <select class="score-input"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4" selected>4</option></select>
+                            </div>
+                            <div class="input-field">
+                                <label>Indicator 3.2: Communicating ethical beliefs respectfully[cite: 1]</label>
+                                <select class="score-input"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4" selected>4</option></select>
+                            </div>
+                            <div class="input-field">
+                                <label>Indicator 3.3: Compassion reflection tracking[cite: 1]</label>
+                                <select class="score-input"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4" selected>4</option></select>
+                            </div>
+                        </div>
+
+                        <!-- Group 4 -->
+                        <div class="form-matrix-card">
+                            <h3>4. Dynamic Lifelong Learner & Leader</h3>[cite: 1]
+                            <div class="input-field">
+                                <label>Indicator 4.1: Personal development goal logs[cite: 1]</label>
+                                <select class="score-input"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4" selected>4</option></select>
+                            </div>
+                            <div class="input-field">
+                                <label>Indicator 4.2: Openness to feedback in group settings[cite: 1]</label>
+                                <select class="score-input"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4" selected>4</option></select>
+                            </div>
+                            <div class="input-field">
+                                <label>Indicator 4.3: Habits of continuous learning logs[cite: 1]</label>
+                                <select class="score-input"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4" selected>4</option></select>
+                            </div>
+                        </div>
+
+                        <!-- Group 5 -->
+                        <div class="form-matrix-card">
+                            <h3>5. Deeply-rooted Global Citizen</h3>[cite: 1]
+                            <div class="input-field">
+                                <label>Indicator 5.1: Global/intercultural activities participation[cite: 1]</label>
+                                <select class="score-input"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4" selected>4</option></select>
+                            </div>
+                            <div class="input-field">
+                                <label>Indicator 5.2: Openness to diverse cultural perspectives[cite: 1]</label>
+                                <select class="score-input"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4" selected>4</option></select>
+                            </div>
+                            <div class="input-field">
+                                <label>Indicator 5.3: Globally aware & locally responsive habits[cite: 1]</label>
+                                <select class="score-input"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4" selected>4</option></select>
+                            </div>
+                        </div>
+                    </form>
+
+                    <button type="button" class="btn-primary-action" onclick="calculateScore()">Generate Analytics Stage</button>
+
+                    <!-- DYNAMIC DASHBOARD OUTPUT CONTAINER -->
+                    <div id="resultsBox" class="glass-analytics-panel" style="display: none;">
+                        <div class="analytics-layout">
+                            <div class="metric-circle">
+                                <span id="totalScoreText">0</span>
+                                <small>Total Score</small>
+                            </div>
+                            <div class="analytics-meta">
+                                <h3>Developmental Rank: <span id="stageText">---</span></h3>[cite: 1]
+                                <p id="interpretationText"></p>[cite: 1]
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- ARTIFACTS SECTION -->
+                <!-- ARTIFACTS SECTION -->
+<section id="evidence" class="pane-card">
+    <div class="pane-header">
+        <h2>Evidence of Learning & Means of Verification</h2>
+        <span class="pill-tag">Multimedia Vault</span>
+    </div>
+    <p class="guideline-alert">⚠️ Reminder: Reflections must be a maximum of 3 paragraphs, with 4–5 sentences each. Text documents must have relevant sections highlighted.</p>
+    <hr>
+
+    <!-- MULTIMEDIA VAULT BLOCK -->
+    <div class="vault-block">
+        <div class="vault-header">
+            <div>
+                <h3>Outcome 1: Digital Literate & Data-Driven Decision Maker</h3>
+                <p class="sub">Indicator 1.1 — GE Coursework Submission & Quality Matrix</p>
+            </div>
+            <a href="#" target="_blank" class="secure-link-btn">🔒 View Secure Cloud Folder</a>
+        </div>
+
+        <div class="vault-body">
+            <!-- New Multimedia Grid Component -->
+            <div class="media-gallery-grid">
+                
+                <!-- Image Container Slot -->
+                <div class="media-card">
+                    <div class="media-preview-box">
+                        <!-- Replace 'placeholder-screenshot.jpg' with your actual image path -->
+                        <img src="placeholder-screenshot.jpg" alt="GE Coursework Screenshot" onerror="this.src='https://placehold.co/600x400/0c2340/ffffff?text=Upload+Screenshot+Here'">
+                    </div>
+                    <div class="media-caption">
+                        <strong>Output Screenshot</strong>
+                        <p>Visual preview of completed Excel/Word matrix tracking data sheets.</p>
+                    </div>
+                </div>
+
+                <!-- Video / Alternate Embed Slot -->
+                <div class="media-card">
+                    <div class="media-preview-box">
+                        <!-- Standard responsive Video Iframe Embed (e.g., YouTube or Google Drive video) -->
+                        <!-- Replace the embed URL with your own link -->
+                        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Presentation Video" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="media-caption">
+                        <strong>Presentation Video Walkthrough</strong>
+                        <p>Video explanation detailing the interdisciplinary project approach.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Reflection Area right underneath the media files -->
+            <div class="reflection-workspace">
+                <h4>Reflective Narration</h4>
+                <p class="text-block">During my first trimester in General Education, I utilized intermediate functions within Microsoft Excel and our campus learning platform to manage data tracking for my coursework outputs. These basic digital applications streamlined how I calculated statistical problems, enabling me to turn in over ninety percent of assignments ahead of time with excellent marks. Mastering these systems directly heightened the visual readability and accuracy of my academic submittals. Navigating these platforms helped cultivate my tech-readiness, allowing me to focus less on mechanical formatting and more on analytical comprehension.</p>
+                
+                <p class="text-block">Implementing data organization tools forced me to look objectively at my academic patterns and identify specific performance weaknesses early in the term. Visual graphs and digital data layouts made it much easier to target exactly which modules required heavier review times. Because my documents were kept neat, organized, and structurally structured, peer evaluation review cycles became drastically faster. This clarity allowed my course professors to pass along explicit feedback that further accelerated my learning curve.</p>
+                
+                <p class="text-block">Moving forward into the next academic phase, I recognize the deep importance of maintaining ethical safety protocols across all shared file servers. I plan to acquire deeper insights into interactive layout strategies to prepare engaging presentations for my upcoming teaching associateship modules. Building strong, consistent data habits right now ensures that I will effectively manage my future physical and virtual classroom assets. Continuous practice with these digital channels forms the absolute bedrock of my transformation into a future-ready educator.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+                <!-- RETROSPECTION SECTION -->
+                <section id="retrospection" class="pane-card">
+                    <div class="pane-header">
+                        <h2>Overall Retrospection</h2>[cite: 1]
+                    </div>
+                    <p class="guideline-alert">⚠️ Exactly 4 paragraphs with 4–5 sentences each[cite: 1].</p>
+                    <hr>
+                    <div class="retrospection-grid">
+                        <div class="retro-para"><span class="badge-num">1</span><p>Replace this text with your honest assessment of entering your first year as an aspiring teacher[cite: 1]. Describe your early impressions of the General Education curriculum pathways and transitioning to college life assignments[cite: 1].</p></div>
+                        <div class="retro-para"><span class="badge-num">2</span><p>Discuss how tracking your metrics via the institutional outcomes enhanced your performance[cite: 1]. Mention explicitly how critical thinking or data navigation tools shaped your output creation quality[cite: 1].</p></div>
+                        <div class="retro-para"><span class="badge-num">3</span><p>Write your 4-5 sentences evaluating hurdles you faced during group tasks, feedback cycles, or digital skill plateaus and how patience or peer collaboration helped you navigate safely[cite: 1].</p></div>
+                        <div class="retro-para"><span class="badge-num">4</span><p>Conclude with clarity detailing your goals as you step into Year 2 (Teaching Associate Stage)[cite: 1]. Commit directly to how continuous learning habits will map onto future field study operations[cite: 1].</p></div>
+                    </div>
+                </section>
+                
+            </div>
+            
+            <footer class="dash-footer">
+                <p>© 2026 | Faculty of General Education and Experiential Learning (FGEEL) | PNU TEDPaths Compliance[cite: 1]</p>
+            </footer>
+        </main>
+
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
