@@ -649,3 +649,18 @@ select:focus {
         padding: 1.5rem;
     }
 }
+
+/* Style configuration for your biography text */
+.profile-bio {
+    margin-top: 1.2rem;
+    padding-top: 1rem;
+    border-top: 1px solid #eef2f6; /* Creates a clean, subtle separation line */
+}
+
+.profile-bio p {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.6; /* Adds comfortable line spacing for reading */
+    color: #555555;   /* Soft dark gray for professional contrast */
+    max-width: 600px; /* Keeps the text lines from stretching out too wide */
+}
