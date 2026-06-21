@@ -342,3 +342,43 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+// Get the button element
+const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+const mainContentPane = document.querySelector(".main-content");
+
+// Function to handle scroll checking
+function checkScrollPosition(container) {
+    if (container.scrollTop > 200) {
+        scrollToTopBtn.style.display = "block";
+    } else {
+        scrollToTopBtn.style.display = "none";
+    }
+}
+
+// Check window scroll
+window.onscroll = function() {
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        scrollToTopBtn.style.display = "block";
+    } else {
+        scrollToTopBtn.style.display = "none";
+    }
+};
+
+// Also check inner content panel scrolling if it exists
+if (mainContentPane) {
+    mainContentPane.addEventListener("scroll", function() {
+        checkScrollPosition(mainContentPane);
+    });
+}
+
+// Clear scroll behavior to go all the way to the top smoothly
+function scrollToTop() {
+    // Scroll window
+    window.scrollTo({ top: 0, behavior: "smooth" });
+    
+    // Scroll inner panel container if active
+    if (mainContentPane) {
+        mainContentPane.scrollTo({ top: 0, behavior: "smooth" });
+    }
+}
