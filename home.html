@@ -57,174 +57,151 @@
             </header>
 
 
-<!-- Teacher Profile Section -->
-<div style="padding: 24px; margin-bottom: 40px; background: #ffffff; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.02);">
+<!-- Fully Unified Profile Container -->
+<div id="home" style="padding: 24px; margin-bottom: 40px; background: #ffffff; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.02); font-family: system-ui, -apple-system, sans-serif;">
     
-    <!-- Profile Header Layout -->
+    <!-- 1. Profile Header Section -->
     <div style="display: flex; align-items: center; gap: 24px; margin-bottom: 24px;">
         
-        <!-- Profile Image (Renders your photo into a perfect circle) -->
+        <!-- Profile Circle Frame -->
         <div style="width: 120px; height: 120px; border-radius: 50%; overflow: hidden; flex-shrink: 0; background: #e2e8f0; border: 3px solid #0052cc;">
             <img src="PROFILE.jpg" alt="Teacher Thirdy Portrait" 
                  style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
         </div>
         
-        <!-- Profile Identity Texts (With Fixed Letter Spacing) -->
-        <div>
-            <h2 style="margin: 0; font-size: 1.8rem; color: #1e293b; letter-spacing: 0.02em; font-weight: 700;">Teacher Thirdy</h2>
+        <!-- Profile Identity Group -->
+        <div style="flex-grow: 1;">
+            <!-- Fixed: Student number badge is now placed directly inline right next to Teacher Thirdy -->
+            <div style="display: flex; align-items: center; gap: 12px; flex-wrap: wrap;">
+                <h2 style="margin: 0; font-size: 1.8rem; color: #1e293b; letter-spacing: 0.02em; font-weight: 700;">Teacher Thirdy</h2>
+                <span style="background: #f1f5f9; color: #64748b; font-size: 0.8rem; font-weight: 600; padding: 4px 12px; border-radius: 20px; letter-spacing: 0.05em;">UG202500273</span>
+            </div>
             <p style="margin: 6px 0 0 0; color: #0052cc; font-weight: 600; letter-spacing: 0.03em;">Aspiring Teacher</p>
             <p style="margin: 2px 0 0 0; color: #64748b; font-size: 0.95rem; letter-spacing: 0.01em;">Philippine Normal University</p>
         </div>
     </div>
 
-    <!-- Description Block (With Better Line Spacing) -->
-    <div style="color: #475569; line-height: 1.7; font-size: 1rem; letter-spacing: 0.01em;">
+    <!-- 2. Merged Description Block -->
+    <!-- Fixed: The line separator and extra header are completely gone. The two texts are now joined together in one continuous paragraph. -->
+    <div style="color: #475569; line-height: 1.7; font-size: 1rem; letter-spacing: 0.01em; margin-bottom: 32px; text-align: justify;">
         <p style="margin: 0;">
-            Teacher Thirdy is currently tired from making this website, but do not worry because he is only venting out right now and this description will be changed the next time around. Jokes aside, they are currently enrolled as a student in Philippine Normal University, From the block BSESS I-19, Taking up Bachelor in Secondary Education - Major in Social Studies, Teacher Thirdy believes that earth is a good place, and that life on it is actually worth living through the goods and bads. He believes that culture, differences, and everyday life is what makes up that "worth" and wants to bring that forth to his future students. He is very hopeful that he will continue to enroll in the following terms and years so that he can make this a reality.
+            Teacher Thirdy is currently tired from making this website, but do not worry because he is only venting out right now and this description will be changed the next time around. Jokes aside, they are currently enrolled as a student in Philippine Normal University, From the block BSESS I-19, Taking up Bachelor in Secondary Education - Major in Social Studies, Teacher Thirdy believes that earth is a good place, and that life on it is actually worth living through the goods and bads. He believes that culture, differences, and everyday life is what makes up that "worth" and wants to bring that forth to his future students. He is very hopeful that he will continue to enroll in the following terms and years so that he can make this a reality. This progressive e-portfolio will track his personal, academic, and professional competencies across his university stay. Year 1 will serve as the crucial foundation layout to becoming a future-ready educator so may you enjoy your walkthrough the same way he enjoyed his.
         </p>
     </div>
 
-    <!-- This element creates the clean space you wanted after the description -->
-    <div style="margin-bottom: 48px;"></div>
+    <!-- 3. Emerging Educational Guiding Principles Sub-Box -->
+    <div style="background: #f8fafc; border-left: 4px solid #0052cc; padding: 16px 20px; border-radius: 0 8px 8px 0;">
+        <h4 style="margin: 0 0 6px 0; color: #0052cc; font-size: 1rem; font-weight: 600; letter-spacing: 0.02em;">My Emerging Educational Guiding Principle:</h4>
+        <p style="margin: 0; color: #475569; font-style: italic; font-size: 0.95rem; line-height: 1.5;">
+            "Ang edukasyon ay mapagpalaya."
+        </p>
+    </div>
+
 </div>
 
-
-
 <div class="content-body">
-    <!-- Rest of your section cards (home, assessment, etc.) stay here -->
 
-            <div class="content-body">
-                
-                <!-- OVERVIEW SECTION -->
-                <section id="home" class="pane-card">
-                    <div class="pane-header">
-                        <h2>Institutional Profile</h2>
-                        <span class="pill-tag">UG202500273</span>
-                    </div>
-                    <hr>
-                    <p>This progressive e-portfolio will track my personal, academic, and professional competencies across my university stay. Under the BOR-Approved Enhanced Experiential Learning Pathway, Year 1 serves as the crucial foundation layout to becoming a future-ready educator. Enjoy your workthrough and feel free to leave comments.</p>
-                    
-                    <div class="philosophy-callout">
-                        <h4>Emerging Educational Guiding Principles</h4>
-                        <p class="quote-text">"Ang edukasyon ay mapagpalaya."</p>
-                    </div>
-                </section>
+    <!-- SELF ASSESSMENT MATRIX SECTION -->
+    <section id="assessment" class="pane-card">
+        <div class="pane-header">
+            <h2>Self-Assessment Tool for Aspiring Teachers</h2>
+        </div>
+        <p class="section-desc">My definitive performance scores across PNU's 5 institutional outcomes.</p>
+        <hr>
 
-                <!-- SELF ASSESSMENT MATRIX SECTION -->
-                <section id="assessment" class="pane-card">
-                    <div class="pane-header">
-                        <h2>Self-Assessment Tool for Aspiring Teachers</h2>
-                    </div>
-                    <p class="section-desc">Rate your performance across PNU's 5 institutional outcomes to dynamically compute your developmental matrix stage[cite: 1].</p>
-                    <hr>
+        <form id="assessmentForm" class="matrix-grid">
+            <!-- Group 1 -->
+            <div class="form-matrix-card">
+                <h3>1. Digital Literate & Data-Driven Decision Maker</h3>
+                <div class="input-field">
+                    <label>Indicator 1.1: Standard GE coursework digital execution</label>
+                    <select class="score-input" disabled><option value="4" selected>4</option></select>
+                </div>
+                <div class="input-field">
+                    <label>Indicator 1.2: Purposeful structure & presentation</label>
+                    <select class="score-input" disabled><option value="4" selected>4</option></select>
+                </div>
+                <div class="input-field">
+                    <label>Indicator 1.3: Ethical use & data security compliance</label>
+                    <select class="score-input" disabled><option value="4" selected>4</option></select>
+                </div>
+                <div class="input-field">
+                    <label>Indicator 1.4: Reflection mapping on digital tools</label>
+                    <select class="score-input" disabled><option value="4" selected>4</option></select>
+                </div>
+            </div>
 
-                    <form id="assessmentForm" class="matrix-grid">
-                        <!-- Group 1 -->
-                        <div class="form-matrix-card">
-                            <h3>1. Digital Literate & Data-Driven Decision Maker</h3>
-                            <div class="input-field">
-                                <label>Indicator 1.1: Standard GE coursework digital execution</label>
-                                <select class="score-input"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4" selected>4</option></select>
-                            </div>
-                            <div class="input-field">
-                                <label>Indicator 1.2: Purposeful structure & presentation</label>
-                                <select class="score-input"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4" selected>4</option></select>
-                            </div>
-                            <div class="input-field">
-                                <label>Indicator 1.3: Ethical use & data security compliance</label>
-                                <select class="score-input"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4" selected>4</option></select>
-                            </div>
-                            <div class="input-field">
-                                <label>Indicator 1.4: Reflection mapping on digital tools</label>
-                                <select class="score-input"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4" selected>4</option></select>
-                            </div>
-                        </div>
+            <!-- Group 2 -->
+            <div class="form-matrix-card">
+                <h3>2. Design Thinker & Innovator</h3>
+                <div class="input-field">
+                    <label>Indicator 2.1: Interdisciplinary problem solving</label>
+                    <select class="score-input" disabled><option value="4" selected>4</option></select>
+                </div>
+                <div class="input-field">
+                    <label>Indicator 2.2: Original/adapted academic design outputs</label>
+                    <select class="score-input" disabled><option value="4" selected>4</option></select>
+                </div>
+                <div class="input-field">
+                    <label>Indicator 2.3: Structural innovation reflection entries</label>
+                    <select class="score-input" disabled><option value="4" selected>4</option></select>
+                </div>
+            </div>
 
-                        <!-- Group 2 -->
-                        <div class="form-matrix-card">
-                            <h3>2. Design Thinker & Innovator</h3>
-                            <div class="input-field">
-                                <label>Indicator 2.1: Interdisciplinary problem solving</label>
-                                <select class="score-input"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4" selected>4</option></select>
-                            </div>
-                            <div class="input-field">
-                                <label>Indicator 2.2: Original/adapted academic design outputs</label>
-                                <select class="score-input"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4" selected>4</option></select>
-                            </div>
-                            <div class="input-field">
-                                <label>Indicator 2.3: Structural innovation reflection entries</label>
-                                <select class="score-input"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4" selected>4</option></select>
-                            </div>
-                        </div>
+            <!-- Group 3 -->
+            <div class="form-matrix-card">
+                <h3>3. Discerning & Compassionate Person</h3>
+                <div class="input-field">
+                    <label>Indicator 3.1: Academic path self-assessment with empathy</label>
+                    <select class="score-input" disabled><option value="4" selected>4</option></select>
+                </div>
+                <div class="input-field">
+                    <label>Indicator 3.2: Communicating ethical beliefs respectfully</label>
+                    <select class="score-input" disabled><option value="3" selected>3</option></select>
+                </div>
+                <div class="input-field">
+                    <label>Indicator 3.3: Compassion reflection tracking</label>
+                    <select class="score-input" disabled><option value="3" selected>3</option></select>
+                </div>
+            </div>
 
-                        <!-- Group 3 -->
-                        <div class="form-matrix-card">
-                            <h3>3. Discerning & Compassionate Person</h3>
-                            <div class="input-field">
-                                <label>Indicator 3.1: Academic path self-assessment with empathy</label>
-                                <select class="score-input"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4" selected>4</option></select>
-                            </div>
-                            <div class="input-field">
-                                <label>Indicator 3.2: Communicating ethical beliefs respectfully</label>
-                                <select class="score-input"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4" selected>4</option></select>
-                            </div>
-                            <div class="input-field">
-                                <label>Indicator 3.3: Compassion reflection tracking</label>
-                                <select class="score-input"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4" selected>4</option></select>
-                            </div>
-                        </div>
+            <!-- Group 4 -->
+            <div class="form-matrix-card">
+                <h3>4. Dynamic Lifelong Learner & Leader</h3>
+                <div class="input-field">
+                    <label>Indicator 4.1: Personal development goal logs</label>
+                    <select class="score-input" disabled><option value="3" selected>3</option></select>
+                </div>
+                <div class="input-field">
+                    <label>Indicator 4.2: Openness to feedback in group settings</label>
+                    <select class="score-input" disabled><option value="4" selected>4</option></select>
+                </div>
+                <div class="input-field">
+                    <label>Indicator 4.3: Habits of continuous learning logs</label>
+                    <select class="score-input" disabled><option value="4" selected>4</option></select>
+                </div>
+            </div>
 
-                        <!-- Group 4 -->
-                        <div class="form-matrix-card">
-                            <h3>4. Dynamic Lifelong Learner & Leader</h3>
-                            <div class="input-field">
-                                <label>Indicator 4.1: Personal development goal logs</label>
-                                <select class="score-input"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4" selected>4</option></select>
-                            </div>
-                            <div class="input-field">
-                                <label>Indicator 4.2: Openness to feedback in group settings</label>
-                                <select class="score-input"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4" selected>4</option></select>
-                            </div>
-                            <div class="input-field">
-                                <label>Indicator 4.3: Habits of continuous learning logs</label>
-                                <select class="score-input"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4" selected>4</option></select>
-                            </div>
-                        </div>
+            <!-- Group 5 -->
+            <div class="form-matrix-card">
+                <h3>5. Deeply-rooted Global Citizen</h3>
+                <div class="input-field">
+                    <label>Indicator 5.1: Global/intercultural activities participation</label>
+                    <select class="score-input" disabled><option value="4" selected>4</option></select>
+                </div>
+                <div class="input-field">
+                    <label>Indicator 5.2: Openness to diverse cultural perspectives</label>
+                    <select class="score-input" disabled><option value="4" selected>4</option></select>
+                </div>
+                <div class="input-field">
+                    <label>Indicator 5.3: Globally aware & locally responsive habits</label>
+                    <select class="score-input" disabled><option value="4" selected>4</option></select>
+                </div>
+            </div>
+        </form>
+    </section>
+</div>
 
-                        <!-- Group 5 -->
-                        <div class="form-matrix-card">
-                            <h3>5. Deeply-rooted Global Citizen</h3>
-                            <div class="input-field">
-                                <label>Indicator 5.1: Global/intercultural activities participation</label>
-                                <select class="score-input"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4" selected>4</option></select>
-                            </div>
-                            <div class="input-field">
-                                <label>Indicator 5.2: Openness to diverse cultural perspectives</label>
-                                <select class="score-input"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4" selected>4</option></select>
-                            </div>
-                            <div class="input-field">
-                                <label>Indicator 5.3: Globally aware & locally responsive habits</label>
-                                <select class="score-input"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4" selected>4</option></select>
-                            </div>
-                        </div>
-                    </form>
-
-                    <button type="button" class="btn-primary-action" onclick="calculateScore()">Generate Analytics Stage</button>
-
-                    <!-- DYNAMIC DASHBOARD OUTPUT CONTAINER -->
-                    <div id="resultsBox" class="glass-analytics-panel" style="display: none;">
-                        <div class="analytics-layout">
-                            <div class="metric-circle">
-                                <span id="totalScoreText">0</span>
-                                <small>Total Score</small>
-                            </div>
-                            <div class="analytics-meta">
-                                <h3>Developmental Rank: <span id="stageText">---</span></h3>[cite: 1]
-                                <p id="interpretationText"></p>[cite: 1]
-                            </div>
-                        </div>
-                    </div>
-                </section>
 
                 <!-- ARTIFACTS SECTION -->
                 <!-- ARTIFACTS SECTION -->
@@ -259,6 +236,99 @@
             </div>
         </div>
     </div>
+
+    <div class="vault-block">
+        <div class="vault-header">
+            <div>
+                <h3>Outcome 1: Digital Literate & Data-Driven Decision Maker</h3>
+                <p class="sub">Indicator 1.1 — GE Coursework Submission & Quality Matrix</p>
+            </div>
+            <a href="#" target="_blank" class="secure-link-btn">Google Drive Folder</a>
+        </div>
+
+        <div class="vault-body">
+            <!-- New Multimedia Grid Component -->
+           
+
+            <!-- Reflection Area right underneath the media files -->
+            <div class="reflection-workspace">
+                <h4>Reflective Narration</h4>
+                <p class="text-block">keme keme</p>
+                <p class="text-block">keme keme</p>
+                <p class="text-block">keme keme</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="vault-block">
+        <div class="vault-header">
+            <div>
+                <h3>Outcome 1: Digital Literate & Data-Driven Decision Maker</h3>
+                <p class="sub">Indicator 1.1 — GE Coursework Submission & Quality Matrix</p>
+            </div>
+            <a href="#" target="_blank" class="secure-link-btn">Google Drive Folder</a>
+        </div>
+
+        <div class="vault-body">
+            <!-- New Multimedia Grid Component -->
+           
+
+            <!-- Reflection Area right underneath the media files -->
+            <div class="reflection-workspace">
+                <h4>Reflective Narration</h4>
+                <p class="text-block">keme keme</p>
+                <p class="text-block">keme keme</p>
+                <p class="text-block">keme keme</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="vault-block">
+        <div class="vault-header">
+            <div>
+                <h3>Outcome 1: Digital Literate & Data-Driven Decision Maker</h3>
+                <p class="sub">Indicator 1.1 — GE Coursework Submission & Quality Matrix</p>
+            </div>
+            <a href="#" target="_blank" class="secure-link-btn">Google Drive Folder</a>
+        </div>
+
+        <div class="vault-body">
+            <!-- New Multimedia Grid Component -->
+           
+
+            <!-- Reflection Area right underneath the media files -->
+            <div class="reflection-workspace">
+                <h4>Reflective Narration</h4>
+                <p class="text-block">keme keme</p>
+                <p class="text-block">keme keme</p>
+                <p class="text-block">keme keme</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="vault-block">
+        <div class="vault-header">
+            <div>
+                <h3>Outcome 1: Digital Literate & Data-Driven Decision Maker</h3>
+                <p class="sub">Indicator 1.1 — GE Coursework Submission & Quality Matrix</p>
+            </div>
+            <a href="#" target="_blank" class="secure-link-btn">Google Drive Folder</a>
+        </div>
+
+        <div class="vault-body">
+            <!-- New Multimedia Grid Component -->
+           
+
+            <!-- Reflection Area right underneath the media files -->
+            <div class="reflection-workspace">
+                <h4>Reflective Narration</h4>
+                <p class="text-block">keme keme</p>
+                <p class="text-block">keme keme</p>
+                <p class="text-block">keme keme</p>
+            </div>
+        </div>
+    </div>
+
 </section>
 
                 <!-- RETROSPECTION SECTION -->

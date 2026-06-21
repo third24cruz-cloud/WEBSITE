@@ -30,6 +30,11 @@ body {
     color: var(--text-main);
     margin: 0;
     padding: 0;
+
+    background-image: url('PNU.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 /* APPLICATION LAYOUT WRAPPER GRID */
